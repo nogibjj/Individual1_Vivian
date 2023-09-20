@@ -3,20 +3,20 @@ import pandas as pd
 # import polars as pl
 
 def get_mean(df):
-    mean = df["median_house_value"].dropna().mean()
+    mean = df["median_house_value"].mean()
     return mean
 
 def get_median(df):
-    median = df["median_house_value"].dropna().median()
+    median = df["median_house_value"].median()
     return median
 
 def get_sd(df):
-    sd = df["median_house_value"].dropna().std()
+    sd = df["median_house_value"].std()
     return sd
 
 def plot(csv):
     # Plot a histogram for the house value
-    data = pd.read_csv(csv)['median_house_value'].dropna()
+    data = pd.read_csv(csv)['median_house_value']
 
     # Create histogram
     plt.hist(data, bins=5, edgecolor="k")
