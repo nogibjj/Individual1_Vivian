@@ -24,6 +24,7 @@ def f(csv):
     print("mean is: " + str(mean))
     print("standard deviation is: " + str(sd))
     plot(csv)
+    return 0
 
 
 if __name__ == "__main__":
