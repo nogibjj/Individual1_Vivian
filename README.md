@@ -1,13 +1,7 @@
-# README [![CI](https://github.com/vivianzzzzz/Project2/actions/workflows/ci.yml/badge.svg)](https://github.com/vivianzzzzz/Project2/actions/workflows/ci.yml)
-This repository features the materials for Mini-Project 2. It includes: 
-- A Makefile
-- A Dockerfile
-- A foundational set of libraries for development operations and web applications
-- GitHub Actions
-
+# README [![CI](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/format.yml/badge.svg)](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/format.yml) [![CI](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/install.yml/badge.svg)](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/install.yml) [![CI](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/lint.yml/badge.svg)](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/lint.yml) [![CI](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/test.yml/badge.svg)](https://github.com/nogibjj/Individual1_Vivian/actions/workflows/test.yml)
 
 ## Purpose Of Project
-The purpose of the project is to use the template from the previous project to help with anaylizing datasets using Pandas. I used the dataset "california housing price" and imported the csv file. In the first part, I use pandas to sort the data points by descending house price and calculated the mean, median, and standard deviation of the "median_house_price" colunm. In the second part, I used matlibplot to generate and displayed a histogram of "median_house_price". 
+The purpose of the project is to perform data analysis using either Pandas or Polars in both Jupyter Notebook and python script. Also, there will be a lib.py where both Jupyter and script.py will use the method in this file to perform the data analysis. In my data analysis, I used the dataset "california housing price" and imported the csv file. In the first part, I use pandas to sort the data points by descending house price and calculated the mean, median, and standard deviation of the "median_house_price" colunm. In the second part, I used matlibplot to generate and displayed a histogram of "median_house_price". 
 
 ## Preparation 
 1. open the project in codespaces
@@ -25,6 +19,8 @@ The purpose of the project is to use the template from the previous project to h
 
 
 ## summary statistics
+import the data set "california_housing_train.csv"
+
 1. describe dataset
 
 <img width="957" alt="Screen Shot 2023-09-10 at 4 32 27 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/06d52b1e-a3dc-40a1-93da-df117020dfc4">
