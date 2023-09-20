@@ -1,5 +1,6 @@
 import matplotlib.pyplot as plt
 import pandas as pd
+import polars as pl
 
 def get_mean(df):
     mean = df.select("median_house_value").drop_nulls().mean()
