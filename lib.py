@@ -1,17 +1,17 @@
 import matplotlib.pyplot as plt
 import pandas as pd
-import polars as pl
+# import polars as pl
 
 def get_mean(df):
-    mean = df.select("median_house_value").drop_nulls().mean()
+    mean = df["median_house_value"].dropna().mean()
     return mean
 
 def get_median(df):
-    median = df.select("median_house_value").drop_nulls().median()
+    median = df["median_house_value"].dropna().median()
     return median
 
 def get_sd(df):
-    sd = df.select("median_house_value").drop_nulls().std()
+    sd = df["median_house_value"].dropna().std()
     return sd
 
 def plot(csv):
