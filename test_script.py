@@ -1,6 +1,6 @@
-from script import main
+from script import f
    
 def test_main():
-    assert main()==0
+    assert f("california_housing_train.csv")==0
 
 
