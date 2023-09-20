@@ -1,26 +1,22 @@
-import pandas as pd
 import matplotlib.pyplot as plt
+import polars as pl
+import pandas as pd
 
-def f():
-    df=pd.read_csv("california_housing_train.csv")
+def get_mean(df):
+    mean = df.select("median_house_value").drop_nulls().mean()
+    return mean
 
-    print(df.shape)
-    print(df.shape[0])
-    print(df.describe())
+def get_median(df):
+    median = df.select("median_house_value").drop_nulls().median()
+    return median
 
-    # Bottom 3 house price
-    sorted_by_value=df.sort_values('median_house_value', ascending = True)[:3]
-    # Calculate the median/mean/standard deviation for the 2022 numbers
-    median=df['median_house_value'].dropna().median()
-    mean=df['median_house_value'].dropna().mean()
-    sd=df['median_house_value'].dropna().std()
-    print("Bottom 3 house price: "+str(sorted_by_value))
-    print("median is: "+ str(median))
-    print("mean is: "+str(mean))
-    print("standard deviation is: "+str(sd))
+def get_sd(df):
+    sd = df.select("median_house_value").drop_nulls().std()
+    return sd
 
+def plot(csv):
     # Plot a histogram for the house value
-    data = df['median_house_value'].dropna()
+    data = pd.read_csv(csv)['median_house_value'].dropna()
 
     # Create histogram
     plt.hist(data, bins=5, edgecolor="k")
@@ -33,5 +29,28 @@ def f():
     # Show plot
     plt.show()
 
+def f(csv):
+    #dataset:"california_housing_train.csv"
+    df = pl.read_csv(csv)
+
+    print(df.shape)
+    print(len(df))
+    print(df.describe())
+
+    # Bottom 3 house price
+    sorted_by_value = df.sort("median_house_value").limit(3)
+    # Calculate the median/mean/standard deviation for the 2022 numbers
+    median = get_median(df)
+    mean = get_mean(df)
+    sd = get_sd(df)
+    print("Bottom 3 house price:")
+    print(sorted_by_value)
+    print("median is: " + str(median))
+    print("mean is: " + str(mean))
+    print("standard deviation is: " + str(sd))
+    plot(csv)
+
+
 if __name__ == "__main__":
-    f()
+    f("california_housing_train.csv")
+    
