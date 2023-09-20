@@ -17,5 +17,5 @@ seaborn
 matplotlib
 pandas
 nbval
-
+polars
 
