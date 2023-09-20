@@ -3,6 +3,9 @@
 ## Purpose Of Project
 The purpose of the project is to perform data analysis using either Pandas or Polars in both Jupyter Notebook and python script. Also, there will be a lib.py where both Jupyter and script.py will use the method in this file to perform the data analysis. In my data analysis, I used the dataset "california housing price" and imported the csv file. In the first part, I use pandas to sort the data points by descending house price and calculated the mean, median, and standard deviation of the "median_house_price" colunm. In the second part, I used matlibplot to generate and displayed a histogram of "median_house_price". 
 
+## Video Link
+https://youtu.be/xNfjg2FRAF8
+
 ## Preparation 
 1. open the project in codespaces
 2. container built and virtual environment to activated through requirements.txt
