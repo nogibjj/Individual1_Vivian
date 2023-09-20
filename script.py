@@ -1,7 +1,5 @@
 from lib import get_median,get_mean,get_sd,plot
-import matplotlib.pyplot as plt
 import polars as pl
-import pandas as pd
 
 
 def f(csv):

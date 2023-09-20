@@ -1,4 +1,4 @@
-from lib import get_
+from lib import get_mean,get_median,get_sd
 import pandas as pd
 def test_stats():
   df=pd.read_csv("./california_housing_train.csv")
