@@ -16,5 +16,6 @@ numpy
 seaborn
 matplotlib
 pandas
+nbval
 
 
