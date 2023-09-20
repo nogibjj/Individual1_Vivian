@@ -11,11 +11,11 @@ The purpose of the project is to perform data analysis using either Pandas or Po
 1. make format
 2. make lint
 
-<img width="517" alt="Screen Shot 2023-09-10 at 5 07 55 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/8a359c49-89c8-4395-aad2-6aee8015285e">
+<img width="861" alt="Screen Shot 2023-09-20 at 3 38 09 PM" src="https://github.com/nogibjj/Individual1_Vivian/assets/143654445/66ae2c31-3ae4-4c59-8a57-3c386cc2a98e">
 
 4. make test
 
- <img width="835" alt="Screen Shot 2023-09-10 at 5 07 33 PM" src="https://github.com/vivianzzzzz/Template/assets/143654445/04797dc5-4aa1-40a3-9ca9-2eecb3344ce4">
+<img width="567" alt="Screen Shot 2023-09-20 at 3 37 51 PM" src="https://github.com/nogibjj/Individual1_Vivian/assets/143654445/5ef5e477-0f30-4c1d-9f92-4744d9c4522f">
 
 
 ## summary statistics
