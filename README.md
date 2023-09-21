@@ -14,12 +14,11 @@ https://youtu.be/xNfjg2FRAF8
 1. make format
 2. make lint
 
-<img width="567" alt="Screen Shot 2023-09-20 at 3 37 51 PM" src="https://github.com/nogibjj/Individual1_Vivian/assets/143654445/5ef5e477-0f30-4c1d-9f92-4744d9c4522f">
+<img width="567" alt="Screen Shot 2023-09-20 at 3 37 51 PM" src="https://github.com/nogibjj/IDS706_Fall2023_mini_Project_4_Matrix_Build/assets/143654445/ce445ee0-a241-4abf-83c3-67a2972c1b4c">
 
 4. make test
 
-<img width="861" alt="Screen Shot 2023-09-20 at 3 38 09 PM" src="https://github.com/nogibjj/Individual1_Vivian/assets/143654445/66ae2c31-3ae4-4c59-8a57-3c386cc2a98e">
-
+<img width="861" alt="Screen Shot 2023-09-20 at 3 38 09 PM" src="https://github.com/nogibjj/IDS706_Fall2023_mini_Project_4_Matrix_Build/assets/143654445/ce3ae7bf-23cb-4fe6-b416-ea1dbece40ea">
 
 ## summary statistics
 import the data set "california_housing_train.csv"
